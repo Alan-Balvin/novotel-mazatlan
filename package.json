@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^10.5.0",
     "@react-three/fiber": "^9.2.0",
+    "@tailwindcss/vite": "^4.1.11",
     "cobe": "^0.6.4",
     "gsap": "^3.13.0",
     "maath": "^0.10.8",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
