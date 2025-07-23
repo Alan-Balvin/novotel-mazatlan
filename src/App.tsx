@@ -18,7 +18,8 @@ const App: React.FC = () => {
           { label: 'Home', href: '#home' },
           { label: 'Projects', href: '#projects' },
           { label: 'Plans', href: '#plans' },
-          { label: 'Renders', href: '#renders' }
+          { label: 'Renders', href: '#renders' },
+          { label: 'Videos', href: '#videos' }
         ]}
       />
 
