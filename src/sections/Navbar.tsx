@@ -1,29 +1,31 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-import React from "react";
+import { motion } from "motion/react";
+
+
+
+type Link = {
+  label: string;
+  href: string;
+};
 
 type NavbarProps = {
   title: string;
-  links: string[];
+  links: Link[];
 };
 
-type NavigationProps = {
-  links: string[];
-};
-
-const Navigation: React.FC<NavigationProps> = ({ links }) => {
+function Navigation({ links }: { links: Link[] }) {
   return (
     <ul className="nav-ul">
-      {links.map((link, idx) => (
-        <li key={idx} className="nav-li">
-          <a className="nav-link" href={`#${link.toLowerCase()}`}>
-            {link}
+      {links.map((link) => (
+        <li key={link.href} className="nav-li">
+          <a className="nav-link" href={link.href}>
+            {link.label}
           </a>
         </li>
       ))}
     </ul>
   );
-};
+}
 
 const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
   const [isOpen, setIsOpen] = useState(false);
