@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Global.css'
 import Navbar from './sections/Navbar'
+import Hero from './sections/Hero';
 
 type NavbarProps = {
   title: string;
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           { label: 'Videos', href: '#videos' }
         ]}
       />
+      <Hero/>
 
       <div>
         <p className="mt-4 text-sm text-gray-300">
