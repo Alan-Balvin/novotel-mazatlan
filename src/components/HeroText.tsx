@@ -7,7 +7,7 @@ const HeroText = () => {
         <div className="flex-col hidden md:flex c-space" >
           <h1 className="text-4xl font-medium">Hi I am Eduardo</h1> 
           <div className="flex flex-col items-start">
-            <p className="text-5xl font-medium text-neutral-300" >An Architect dedicated to model</p>
+            <p className="text-5xl font-medium text-neutral-300" >An Architect specialized in modeling</p>
 <div><FlipWords words={["BIM", "Electrical", "Systems"]} className="font-black text-white text-7xl" /></div>
             <p className="text-4xl font-medium text-neutral-300" >Solutions</p>
 
