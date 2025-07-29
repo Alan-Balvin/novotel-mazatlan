@@ -1,4 +1,4 @@
-
+import { FlipWords } from "./FlipWords"
 
 const HeroText = () => {
   return (
@@ -8,7 +8,9 @@ const HeroText = () => {
           <h1 className="text-4xl font-medium">Hi I am Eduardo</h1> 
           <div className="flex flex-col items-start">
             <p className="text-5xl font-medium text-neutral-300" >An Architect dedicated to model electrical BIM</p>
+<div><FlipWords words={["BIM", "Electrical", "Systems"]} className="font-black text-white" /></div>
             <p className="text-4xl font-medium text-neutral-300" >Electrical Solutions</p>
+
             </div> 
         </div>
         {/*Mobile View*/}
