@@ -25,8 +25,16 @@ const HeroText = () => {
           initial="hidden"
           animate="visible"
           transition={{delay:0.8}} >An Architect specialized in modeling</motion.p>
-<motion.div><FlipWords words={words} className="font-black text-white text-7xl" /></motion.div>
-            <motion.p className="text-4xl font-medium text-neutral-300" >Solutions</motion.p>
+<motion.div variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{delay:1.2}}  ><FlipWords words={words} className="font-black text-white text-7xl" /></motion.div>
+            <motion.p className="text-4xl font-medium text-neutral-300"
+            variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{delay:1.4}} 
+             >Solutions</motion.p>
 
             </motion.div> 
         </div>
