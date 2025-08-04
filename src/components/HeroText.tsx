@@ -40,11 +40,23 @@ const HeroText = () => {
         </div>
         {/*Mobile View*/}
       <div className="flex- flex-col space-y-6 md:hidden" >
-        <motion.p className="text-4xl font-medium" >Hi </motion.p>
+        <motion.p className="text-4xl font-medium" variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{delay:0.5}}  >Hi </motion.p>
         <div>
-          <motion.p className="text-5xl font-black text-neutral-300">Building</motion.p>
-          <motion.div><FlipWords words={words} className="font-bold text-white text-7xl"/></motion.div>
-          <motion.p className="text-4xl font-black text-neutral-300">Electrical Applications</motion.p>
+          <motion.p className="text-5xl font-black text-neutral-300" variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{delay:0.8}} >Building</motion.p>
+          <motion.div variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{delay:1.2}} ><FlipWords words={words} className="font-bold text-white text-7xl"/></motion.div>
+          <motion.p className="text-4xl font-black text-neutral-300" variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={{delay:1.4}} >Electrical Applications</motion.p>
         </div>
       </div>
     </div>
