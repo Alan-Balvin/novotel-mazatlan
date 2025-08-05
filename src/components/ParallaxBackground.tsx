@@ -11,7 +11,12 @@ const ParallaxBackground = () => {
         backgroundImage:"url(/assets/sky.jpg)",
         backgroundPosition:"bottom",
         backgroundSize:"cover",}}/>
-      <div/>
+      <div className='absolute inset-0 '
+      style={{
+        backgroundImage:"url(/assets/conduits.png)",
+        backgroundPosition:"bottom",
+        backgroundSize:"cover",}}
+       />
 
       <div/>
 
