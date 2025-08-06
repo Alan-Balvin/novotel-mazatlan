@@ -25,11 +25,7 @@ const App: React.FC = () => {
       />
       <Hero/>
 
-      <div>
-        <p className="mt-4 text-sm text-gray-300">
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+     
     </div>
   )
 }

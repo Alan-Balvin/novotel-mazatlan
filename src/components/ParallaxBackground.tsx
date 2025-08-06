@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 
 const ParallaxBackground = () => {
   const {scrollYProgress} = useScroll();
-  const conduits3Y = useTransform(scrollYProgress, [0,0.5], ["0%","70%"]);
+  const conduits3Y = useTransform(scrollYProgress, [0,0.5], ["0%","40%"]);
   const planetsX = useTransform(scrollYProgress, [0,0.5], ["0%","-20%"]);
   const mountain2Y = useTransform(scrollYProgress, [0,0.5], ["0%","30%"]);
   const mountain1Y = useTransform(scrollYProgress, [0,0.5], ["0%","0%"]);
