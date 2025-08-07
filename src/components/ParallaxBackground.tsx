@@ -1,12 +1,13 @@
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 
 
 const ParallaxBackground = () => {
   const {scrollYProgress} = useScroll();
-  const conduits3Y = useTransform(scrollYProgress, [0,0.5], ["0%","40%"]);
-  const planetsX = useTransform(scrollYProgress, [0,0.5], ["0%","60%"]);
-  const mountain2Y = useTransform(scrollYProgress, [0,0.5], ["0%","30%"]);
-  const mountain1Y = useTransform(scrollYProgress, [0,0.5], ["0%","0%"]);
+  const x = useSpring(scrollYProgress, {damping: 50});
+  const conduits3Y = useTransform(x, [0,0.5], ["0%","40%"]);
+  const planetsX = useTransform(x, [0,0.5], ["0%","60%"]);
+  const mountain2Y = useTransform(x, [0,0.5], ["0%","30%"]);
+  const mountain1Y = useTransform(x, [0,0.5], ["0%","0%"]);
   return (
     <section className='absolute inset-0 bg-black/40' >
 

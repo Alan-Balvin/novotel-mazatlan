@@ -24,6 +24,12 @@ const App: React.FC = () => {
         ]}
       />
       <Hero/>
+      <section className='min-h-screen' />
+      <section className='min-h-screen' />
+      <section className='min-h-screen' />
+      <section className='min-h-screen' />
+      <section className='min-h-screen' />
+      <section className='min-h-screen' />
 
      
     </div>
