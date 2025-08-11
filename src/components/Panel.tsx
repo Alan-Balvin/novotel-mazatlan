@@ -1,7 +1,8 @@
 import * as THREE from 'three'
-import { useGLTF } from '@react-three/drei'
+import { useAnimations, useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 import { ThreeElements } from '@react-three/fiber'
+import { useRef, useEffect } from 'react'
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -36,7 +37,13 @@ function useValidatedGLTF(url: string): GLTFResult {
 
 
 export function Panel(props: ThreeElements['group']) {
-  const { nodes, materials } = useValidatedGLTF('/panels/electrical_cabinet_ujzfde2_high.glb')
+   const group = useRef<THREE.Group | null>(null) 
+  const { nodes, materials, animations } = useValidatedGLTF('/panels/electrical_cabinet_ujzfde2_high.glb')
+const { actions } = useAnimations(animations, group)
+useEffect(()=> { if (animations.length > 0)
+{ actions[animations[0].name]?.play()}
+},[actions, animations])
+
 const mat = materials.Electrical_Cabinet_ujzfde2_High
 mat.metalness = 2.0
 mat.roughness = 0.2
