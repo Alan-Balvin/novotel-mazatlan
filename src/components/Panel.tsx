@@ -1,8 +1,9 @@
 import * as THREE from 'three'
 import { useAnimations, useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
-import { ThreeElements } from '@react-three/fiber'
+import { ThreeElements, useFrame } from '@react-three/fiber'
 import { useRef, useEffect } from 'react'
+import { useMotionValue, useSpring } from 'framer-motion'
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -44,6 +45,15 @@ useEffect(()=> { if (animations.length > 0)
 { actions[animations[0].name]?.play()}
 },[actions, animations])
 
+const yPosition = useMotionValue(50);
+const ySpring = useSpring(yPosition, {damping:30})
+useEffect(()=>{ySpring.set(-1)}, [ySpring])
+useFrame(()=>{
+  if (group.current) {
+    group.current.position.y = ySpring.get()
+  }
+})
+
 const mat = materials.Electrical_Cabinet_ujzfde2_High
 mat.metalness = 2.0
 mat.roughness = 0.2
@@ -51,7 +61,11 @@ mat.emissive = new THREE.Color(0x333333)
 mat.emissiveIntensity = 0.5
 
   return (
-    <group {...props} dispose={null}>
+    <group {...props} 
+    dispose={null}
+    rotation={[0, 0, 0]}
+    scale={props.scale || 1}
+    position={props.position || [1.3, -1, 0] }>
      <mesh
   castShadow
   receiveShadow

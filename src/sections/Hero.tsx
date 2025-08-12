@@ -3,7 +3,10 @@ import { Canvas } from "@react-three/fiber"
 import HeroText from "../components/HeroText"
 import ParallaxBackground from "../components/ParallaxBackground"
 import { OrbitControls } from "@react-three/drei"
+import { useMediaQuery } from "react-responsive"
+
 const Hero = () => {
+  const isMobile = useMediaQuery({maxWidth:853})
   return (
     <section className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-visible c-space">
 <HeroText/>
@@ -16,7 +19,8 @@ const Hero = () => {
       <ambientLight intensity={1.0} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
       
-    <Panel/>
+    <Panel scale={isMobile ? 1 : undefined}
+           position={isMobile ? [0,-1.5, 0] : undefined}/>
     <OrbitControls/>
   </Canvas>
 </figure>
