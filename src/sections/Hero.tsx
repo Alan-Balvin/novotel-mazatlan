@@ -4,6 +4,8 @@ import HeroText from "../components/HeroText"
 import ParallaxBackground from "../components/ParallaxBackground"
 import { OrbitControls } from "@react-three/drei"
 import { useMediaQuery } from "react-responsive"
+import { useFrame } from "@react-three/fiber"
+import { easing } from 'maath';
 
 const Hero = () => {
   const isMobile = useMediaQuery({maxWidth:853})
@@ -22,6 +24,7 @@ const Hero = () => {
     <Panel scale={isMobile ? 1 : undefined}
            position={isMobile ? [0,-1.5, 0] : undefined}/>
     <OrbitControls/>
+    <Rig/>
   </Canvas>
 </figure>
     </section>
@@ -29,3 +32,14 @@ const Hero = () => {
 }
 
 export default Hero
+
+function Rig(){
+  return useFrame((state, delta)=>{
+    easing.damp3(state.camera.position, [
+      state.mouse.x / 10,
+      1 + state.mouse.y / 10,
+      3
+    ], 0.5,
+  delta);
+  });
+}
