@@ -46,8 +46,16 @@ useEffect(()=> { if (animations.length > 0)
 },[actions, animations])
 
 const yPosition = useMotionValue(50);
-const ySpring = useSpring(yPosition, {damping:30})
-useEffect(()=>{ySpring.set(-1)}, [ySpring])
+const ySpring = useSpring(yPosition, {damping:40, stiffness: 30, mass: 2 })
+/*
+useEffect(()=>{ySpring.set(-3)}, [ySpring])
+*/
+
+useEffect(()=>{ const time = setTimeout(()=>{
+  ySpring.set(-2)
+}, 100)
+return ()=>clearTimeout(time)},[ySpring])
+
 useFrame(()=>{
   if (group.current) {
     group.current.position.y = ySpring.get()
@@ -62,10 +70,11 @@ mat.emissiveIntensity = 0.5
 
   return (
     <group {...props} 
+    ref={group}
     dispose={null}
     rotation={[0, 0, 0]}
     scale={props.scale || 1}
-    position={props.position || [1.3, -1, 0] }>
+    >
      <mesh
   castShadow
   receiveShadow
