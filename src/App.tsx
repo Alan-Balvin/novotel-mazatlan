@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Global.css'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero';
+import About from './sections/About';
 
 type NavbarProps = {
   title: string;
@@ -24,12 +25,12 @@ const App: React.FC = () => {
         ]}
       />
       <Hero/>
+      <About/>
       <section className='min-h-screen' />
       <section className='min-h-screen' />
       <section className='min-h-screen' />
       <section className='min-h-screen' />
-      <section className='min-h-screen' />
-      <section className='min-h-screen' />
+     
 
      
     </div>
