@@ -12,12 +12,13 @@ const ParallaxBackground = () => {
     <section className='absolute inset-0 bg-black/40' >
 
     <div className='relative h-screen overflow-y-hidden '>
-        {/*Background sky*/}
+        {/*Ray of light*/}
       <div className='absolute inset-0 w-full h-screen '
       style={{
         backgroundImage:"url(/assets/sky.jpg)",
         backgroundPosition:"bottom",
         backgroundSize:"cover",}}/>
+        
       <motion.div className='absolute inset-0 '
       style={{
         backgroundImage:"url(/assets/conduits.png)",
@@ -25,6 +26,7 @@ const ParallaxBackground = () => {
         backgroundSize:"cover",
         y: conduits3Y,}}
        />
+
        <motion.div className='absolute inset-0 '
       style={{
         backgroundImage:"url(/assets/planets.png)",
@@ -32,6 +34,7 @@ const ParallaxBackground = () => {
         backgroundSize:"cover",
         x: planetsX,}}
        />
+
        <motion.div className='absolute inset-0 '
       style={{
         backgroundImage:"url(/assets/mountain-2.png)",
@@ -39,6 +42,7 @@ const ParallaxBackground = () => {
         backgroundSize:"cover",
         y: mountain2Y,}}
        />
+       
        <motion.div className='absolute inset-0 '
       style={{
         backgroundImage:"url(/assets/mountain-1.png)",
@@ -47,11 +51,7 @@ const ParallaxBackground = () => {
         y: mountain1Y,}}
        />
 
-      <div/>
-
-      <div/>
-
-      <div/>
+     
     </div>
     </section>
   )
