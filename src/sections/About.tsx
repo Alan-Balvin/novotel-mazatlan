@@ -1,5 +1,7 @@
 import Cart from "../components/Cart"
 import { useRef } from "react";
+import { Globe } from "../components/Globe";
+import CopyEmailButton from "../components/CopyEmailButton";
 
 const About = () => {
   const gridToContainer = useRef<HTMLDivElement>(null);
@@ -34,9 +36,24 @@ const About = () => {
       </div>
     </div>
     {/* Grid 3 */}
-    <div className="grid-black-color grid-3"></div>
+    <div className="grid-black-color grid-3">
+      <div className="z-10 w-[50%]">
+        <p className="headtext">Time Zone</p>
+        <p className="subtext">I'm based in Mazatlan City and open to remote work</p>
+      </div>
+      <figure className="absolute left-[30%] top-[10%]">
+        <Globe/>
+      </figure>
+    </div>
     {/* Grid 4 */}
-    <div className="grid-special-color grid-4"></div>
+    <div className="grid-special-color grid-4">
+      <div className="flex flex-col items-center justify-center gap-4 size-full">
+        <p className="text-center headtext">
+          Linkedin work remotely
+        </p>
+        <CopyEmailButton/>
+      </div>
+    </div>
     {/* Grid 5 */}
     <div className="grid-default-color grid-5"></div>
 </div>
