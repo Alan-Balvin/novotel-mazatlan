@@ -1,6 +1,8 @@
 import Cart from "../components/Cart"
+import { useRef } from "react";
 
 const About = () => {
+  const gridToContainer = useRef<HTMLDivElement>(null);
   return <section className="c-space section-spacing">
 <h2  className="text-heading">About me</h2>
 <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
@@ -17,12 +19,17 @@ const About = () => {
       <div className="absolute inset-x-0 pointer-evets-none-bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo"></div>
     </div>
     {/* Grid 2 */}
-    <div className="grid-default-color grid-2">
+    <div className="grid-default-color grid-2"
+          ref={gridToContainer}>
       <div className="flex items-center justify-center w-full h-full">
         <p className="flex-items-end text-5xl text-gray-500">MEP SYSTEMS</p>
-        <Cart  style={{ top: "10%", left: "6%"}} text="ELECTRICAL"/>
-        <Cart  style={{ top: "70%", left: "33%"}} text="MECHANICAL"/>
-        <Cart  style={{ top: "10%", left: "60%"}} text="PLUMBERING"/>
+        <Cart  style={{ top: "10%", left: "6%"}} text="ELECTRICAL" containerRef={gridToContainer}/>
+        <Cart  style={{ top: "70%", left: "33%"}} text="MECHANICAL" containerRef={gridToContainer}/>
+        <Cart  style={{ top: "10%", left: "60%"}} text="PLUMBERING" containerRef={gridToContainer}/>
+        <Cart  style={{ top: "10%", left: "45%"}}  image="assets/logos/csharp.svg" containerRef={gridToContainer}/>
+        <Cart  style={{ top: "70%", left: "15%"}}  image="assets/logos/css3.svg" containerRef={gridToContainer}/>
+        <Cart  style={{ top: "70%", left: "75%"}}  image="assets/logos/dotnet.svg" containerRef={gridToContainer}/>
+       
        
       </div>
     </div>
