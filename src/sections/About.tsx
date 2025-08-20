@@ -2,6 +2,7 @@ import Cart from "../components/Cart"
 import { useRef } from "react";
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
+import FrameWorks from "../components/FrameWorks";
 
 const About = () => {
   const gridToContainer = useRef<HTMLDivElement>(null);
@@ -55,7 +56,9 @@ const About = () => {
       </div>
     </div>
     {/* Grid 5 */}
-    <div className="grid-default-color grid-5"></div>
+    <div className="grid-default-color grid-5">
+      <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125"><FrameWorks/></div>
+    </div>
 </div>
   </section>
 }
