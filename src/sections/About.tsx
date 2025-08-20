@@ -2,7 +2,7 @@ import Cart from "../components/Cart"
 import { useRef } from "react";
 import { Globe } from "../components/Globe";
 import CopyEmailButton from "../components/CopyEmailButton";
-import FrameWorks from "../components/FrameWorks";
+import {FrameWorks} from "../components/FrameWorks";
 
 const About = () => {
   const gridToContainer = useRef<HTMLDivElement>(null);
