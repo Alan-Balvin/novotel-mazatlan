@@ -15,7 +15,7 @@ interface ProjectDetailsProps {
 
 const ProjectDetails = ({title, description, image, href, tags, subDescription}:ProjectDetailsProps) => {
   return (
-    <div>
+    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       
     </div>
   )
