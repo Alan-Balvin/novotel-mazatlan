@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 
 interface Tag {
@@ -18,6 +19,7 @@ interface Props {
 
 
 const Project = ({title, description, subDescription, href, image, tags}:Props) => {
+  const [ isHidden, setIsHidden ] = useState(false)
   return (
     <>
     <div className='flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0'>
@@ -33,13 +35,20 @@ const Project = ({title, description, subDescription, href, image, tags}:Props) 
         ))}
       </div>
       </div>
-      <button className='flex items-center gap-1 cursor-pointer hover-animation'>
+      <button onClick={()=>setIsHidden(true)} className='flex items-center gap-1 cursor-pointer hover-animation'>
         Discover
         <img src="assets/arrow-right.svg"  className='w-5'   />
       </button>
     </div>
     <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'/>
-    <ProjectDetails title={title} subDescription={subDescription} description={description} image={image} tags={tags} href={href}/>
+    <ProjectDetails 
+    title={title} 
+    subDescription={subDescription} 
+    description={description} 
+    image={image} 
+    tags={tags} 
+    href={href}
+    closeModal={()=>setIsHidden(false)}/>
     </>
   )
 }
