@@ -1,8 +1,11 @@
+import ProjectDetails from "./ProjectDetails";
+
 interface Tag {
   id: number;
   name: string;
   path: string;
 }
+
 
 interface Props {
   title: string;
@@ -36,6 +39,7 @@ const Project = ({title, description, subDescription, href, image, tags}:Props) 
       </button>
     </div>
     <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'/>
+    <ProjectDetails title={title} subDescription={subDescription} description={description} image={image} tags={tags} href={href}/>
     </>
   )
 }
