@@ -4,6 +4,7 @@ import Navbar from './sections/Navbar'
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Projects from './sections/Projects';
+import Experiences from './sections/Experiences';
 
 type NavbarProps = {
   title: string;
@@ -28,6 +29,7 @@ const App: React.FC = () => {
       <Hero/>
       <About/>
       <Projects/>
+      <Experiences/>
      
      
 

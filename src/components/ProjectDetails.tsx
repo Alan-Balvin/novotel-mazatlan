@@ -1,3 +1,5 @@
+import {motion} from "motion/react";
+
 interface Tag {
   id: number;
   name: string;
@@ -17,7 +19,9 @@ interface ProjectDetailsProps {
 const ProjectDetails = ({title, description, image, href, tags, subDescription, closeModal}:ProjectDetailsProps) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
-      <div className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10" >
+      <motion.div className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
+      initial={{ opacity: 0, scale: 0.5}} 
+      animate={{ opacity: 1.0, scale: 1}}>
       <button  onClick={closeModal}  className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500 ">
         <img src="assets/close.svg" alt="close" className="w-6 h-6" />
       </button>
@@ -45,7 +49,7 @@ const ProjectDetails = ({title, description, image, href, tags, subDescription, 
           <img src="assets/arrow-up.svg" alt="" className="size-4" />
         </div>
       </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
