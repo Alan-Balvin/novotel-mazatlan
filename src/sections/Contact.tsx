@@ -15,6 +15,8 @@ const Contact = () => {
     const handleSubmit =(e: FormSubmitEvent)=>{
         e.preventDefault()
         console.log(formData)
+        //service_x1cdjq9
+        //template_byjjvcw
     }
   return (
     <section className='relative flex items-center c-space section-spacing'>
