@@ -1,23 +1,46 @@
 import { useState } from "react"
 import type { ContactFormData, InputChangeEvent, FormSubmitEvent } from "../types/forms";
+import emailjs from "@emailjs/browser";
 
 
 
 const Contact = () => {
-    const [ formData,setFormData ] =useState<ContactFormData>({
+    const [ formData, setFormData ] =useState<ContactFormData>({
         name:"",
         email: "",
         message: "",
     })
+    const[ isLoading, setIsLoading ] = useState(false)
     const handleChange =(e: InputChangeEvent)=>{
         setFormData({...formData, [e.target.name]: e.target.value})
     }
-    const handleSubmit =(e: FormSubmitEvent)=>{
+    const handleSubmit = async (e: FormSubmitEvent)=>{
         e.preventDefault()
-        console.log(formData)
+        setIsLoading(true);
+        try {
+            console.log("From submited", formData);
+           await emailjs.send("service_9f9xigo","template_byjjvcw",
+             {
+            from_name: formData.name,
+            to_name: "Eduardo Cancino",
+            from_email: formData.email,
+            to_email: "paulcancinoramos@gmail.com",
+            message: formData.message,
+           },
+           "BQ4EyX1ynoxN3cO97"
+           )
+            setIsLoading(false);
+            alert("success!")
+        } catch (error) {
+            setIsLoading(false);
+            console.log("error");
+            alert("failed")
+        }
+        
+        }
         //service_x1cdjq9
         //template_byjjvcw
-    }
+    
   return (
     <section className='relative flex items-center c-space section-spacing'>
         <div className='flex flex-col items-center justify-center max-w-md p-5  mx-auto border border-white/10 rounded-2xl bg-primary'>
@@ -62,7 +85,7 @@ const Contact = () => {
                            autoComplete='message'
                            required />
                 </div>
-                <button type="submit" className='w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation'>Send</button>
+                <button type="submit" className='w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation'>{!isLoading ? "Send" : "Sending..."}</button>
             </form>
             </div>
     </section>

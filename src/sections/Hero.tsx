@@ -17,7 +17,8 @@ const Hero = () => {
 
 <ParallaxBackground/>
 <figure className="absolute inset-0" style={{width:"100vw", height:"100vh"}} >
-      <Canvas camera={{ position: [0, 1, 5] }}>
+      <Canvas camera={{ position: [0, 1, 5] }}
+      >
       <ambientLight intensity={1.0} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
 
