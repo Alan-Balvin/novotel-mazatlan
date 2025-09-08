@@ -11,14 +11,22 @@ type Link = {
 type NavbarProps = {
   title: string;
   links: Link[];
+  onLinkClick?: (section: string) => void;
 };
 
-function Navigation({ links }: { links: Link[] }) {
+function Navigation({ links, onLinkClick }: { links: Link[], onLinkClick?: (section: string) => void }) {
   return (
     <ul className="nav-ul">
       {links.map((link) => (
         <li key={link.href} className="nav-li">
-          <a className="nav-link" href={link.href}>
+         <a
+            style={{ cursor: 'pointer' }}
+            onClick={(e) => {
+              e.preventDefault(); 
+              onLinkClick && onLinkClick(link.label); 
+            }}
+            className="nav-link"
+          >
             {link.label}
           </a>
         </li>
@@ -27,7 +35,7 @@ function Navigation({ links }: { links: Link[] }) {
   );
 }
 
-const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
+const Navbar: React.FC<NavbarProps> = ({ title, links, onLinkClick }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -51,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
             />
           </button>
           <nav className="hidden sm:flex">
-            <Navigation links={links} />
+            <Navigation links={links} onLinkClick={onLinkClick} />
           </nav>
         </div>
       </div>
@@ -64,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ title, links }) => {
           transition={{ duration: 1 }}
         >
           <nav className="pb-5">
-            <Navigation links={links} />
+           <Navigation links={links} onLinkClick={onLinkClick} />
           </nav>
         </motion.div>
       )}
