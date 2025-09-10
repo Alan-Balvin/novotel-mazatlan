@@ -40,13 +40,7 @@ const App: React.FC = () => {
         ]}
          onLinkClick={(section: string) => setActiveSection(section)}
       />
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Experiences/>
-      <Testimonial/>
-      <Contact/>
-         {/* Secciones condicionales */}
+     
       {activeSection === 'Home' && (
         <>
           <Hero />
