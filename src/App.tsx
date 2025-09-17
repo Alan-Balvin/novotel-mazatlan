@@ -35,6 +35,7 @@ const App: React.FC = () => {
           { label: 'Home', href: '#home' },
           { label: 'Projects', href: '#projects' },
           { label: 'Plans', href: '#plans' },
+          { label: 'Next.js', href: '#next' },
           { label: 'Renders', href: '#renders' },
           { label: 'Videos', href: '#videos' }
         ]}
@@ -59,7 +60,15 @@ const App: React.FC = () => {
       </div>
       }
 
-      {/* Aquí puedes añadir otras secciones si quieres */}
+     {activeSection === 'Next.js' && (
+  <div style={{ marginTop: '80px', width: '100%', height: '90vh' }}>
+    <iframe
+      src="http://localhost:3000/" // ruta de tu Next.js
+      style={{ width: '100%', height: '100%', border: 'none' }}
+      title="Next.js Microfrontend"
+    />
+  </div>
+)}
       <Contact />
       <Footer/>
      
