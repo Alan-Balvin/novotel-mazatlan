@@ -24,8 +24,8 @@ const fetchPlans = async () => {
 
     const data: PlansResponse = {
       plans: [
-        { id: "1", name: "Plano 1", imageUrl: "https://pablo-architect-planos.s3.us-east-2.amazonaws.com/blueprints/NOV-IE-AAC-AZA1-01.pdf" },
-        { id: "2", name: "Plano 2", imageUrl: "https://pablo-architect-planos.s3.us-east-2.amazonaws.com/blueprints/NOV-IE-AAC-AZA1-02.pdf" },
+        { id: "1", name: "Plano 1", imageUrl: "https://pablo-architect-planos.s3.us-east-2.amazonaws.com/blueprints/01-NOV-IE-AAC-AZA1-01.pdf" },
+        { id: "2", name: "Plano 2", imageUrl: "https://pablo-architect-planos.s3.us-east-2.amazonaws.com/blueprints/02-NOV-IE-AAC-AZA1-02.pdf" },
       ],
     };
 
