@@ -16,7 +16,7 @@ const About = () => {
       <div className="z-10">
         <p className="headtext">Hi, I'm Eduardo Cancino</p>
         <p className="subtext">
-          Over the last 3 years, I have developet and created 3D Models for different applications and my purpose is to deliver practical solutions to specific projects
+          Over the last four years, I have developed BIM-based 3D models for MEP systems, specializing in electrical modeling and delivering practical solutions for project coordination and construction.
         </p>
       </div>
       <div className="absolute inset-x-0 pointer-evets-none-bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo"></div>
@@ -29,9 +29,7 @@ const About = () => {
         <Cart  style={{ top: "10%", left: "6%"}} text="ELECTRICAL" containerRef={gridToContainer}/>
         <Cart  style={{ top: "70%", left: "33%"}} text="MECHANICAL" containerRef={gridToContainer}/>
         <Cart  style={{ top: "10%", left: "60%"}} text="PLUMBERING" containerRef={gridToContainer}/>
-        <Cart  style={{ top: "10%", left: "45%"}}  image="assets/logos/csharp.svg" containerRef={gridToContainer}/>
-        <Cart  style={{ top: "70%", left: "15%"}}  image="assets/logos/css3.svg" containerRef={gridToContainer}/>
-        <Cart  style={{ top: "70%", left: "75%"}}  image="assets/logos/dotnet.svg" containerRef={gridToContainer}/>
+     
        
        
       </div>

@@ -18,13 +18,13 @@ const HeroText = () => {
           variants={variants}
           initial="hidden"
           animate="visible"
-          transition={{delay:0.5}}>Hi I am Eduardo</motion.h1> 
+          transition={{delay:0.5}}>Hi I am Eduardo Cancino</motion.h1> 
           <motion.div className="flex flex-col items-start">
             <motion.p className="text-5xl font-medium text-neutral-300"
           variants={variants}
           initial="hidden"
           animate="visible"
-          transition={{delay:0.8}} >An Architect specialized in modeling</motion.p>
+          transition={{delay:0.8}} >An Architect specialized in BIM MEP modeling</motion.p>
 <motion.div variants={variants}
           initial="hidden"
           animate="visible"
