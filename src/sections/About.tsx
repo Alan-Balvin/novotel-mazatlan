@@ -11,8 +11,15 @@ const About = () => {
 <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
     {/* Grid 1 */}
     <div className="flex items-end grid-default-color grid-1">
-      <img src="assets/coding-pov.png" alt="" 
-      className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"/>
+     <img 
+  src="assets/bim.png" 
+  alt=""
+  className="
+    absolute scale-[1] -right-[5rem] -top-[1rem] 
+    md:scale-[3] md:left-50 md:inset-y-10 
+    lg:left-1/2 lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-[60%] lg:scale-[1]
+  "
+/>
       <div className="z-10">
         <p className="headtext">Hi, I'm Eduardo Cancino</p>
         <p className="subtext">
@@ -38,7 +45,7 @@ const About = () => {
     <div className="grid-black-color grid-3">
       <div className="z-10 w-[50%]">
         <p className="headtext">Time Zone</p>
-        <p className="subtext">I'm based in Mazatlan City and open to remote work</p>
+        <p className="subtext">I'm based in Mazatlan City/Mountain Zone and open to work remotely</p>
       </div>
       <figure className="absolute left-[30%] top-[10%]">
         <Globe/>
