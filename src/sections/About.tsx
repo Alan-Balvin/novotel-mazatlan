@@ -62,9 +62,17 @@ const About = () => {
     </div>
     {/* Grid 5 */}
     <div className="grid-default-color grid-5">
-<div className="z-10 w-[50%]" >
-  <p className="headText">Tech Stack</p>
-  <p className="subText">I specialize in Revit Models, AutoCAD 3D Models and Electrical Systems</p>
+<div className="z-10 w-[65%]" >
+  <p className="headtext">Tech Stack</p>
+  
+  <p className="subText">Qualified architect with professional license, 4 years of experience
+working detailing sheets for deliverables, electrical installation drawings,
+completion of logbooks and site visits, 3d drawings and renderings. Skilled
+to design in accordance with building regulations and proficient in
+AutoCAD, Revit, 3ds Max, applications for topographic uplifts. Working
+currently in BIM-MEP Systems modeling conduit, as-built conduit runs and
+clash detection.
+</p>
 </div>
       <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
         <FrameWorks/></div>
