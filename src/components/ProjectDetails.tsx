@@ -46,8 +46,7 @@ const ProjectDetails = ({title, description, image, href, tags, subDescription, 
           <a href={href} className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation">
             View Project
           </a>
-          <img src="assets/arrow-up.svg" alt="" className="size-4" />
-        </div>
+                 </div>
       </div>
       </motion.div>
     </div>
