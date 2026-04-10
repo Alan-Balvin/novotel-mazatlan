@@ -1,23 +1,24 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "AIR-BUS UK East Factory",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "Working on the Airbus UK East Factory project, developing as-built models for architectural and MEP systems.Using Autodesk Revit 2025 and point cloud data to accurately model rails and rainwater drainage systems.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
-    ],
+"Involved in the Airbus UK East Factory project, delivering detailed as-built modeling of architectural elements, handrails, and rainwater drainage pipework within an industrial facility for Raytheon Technologies.",
+"Working with Autodesk Revit 2025 and Autodesk Construction Cloud (via Autodesk Connector) to manage and coordinate models.",
+"Utilizing point cloud data (RCP/RCS) to ensure high-accuracy representation of existing site conditions.",
+
+
+],
     href: "",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/Airbus-west-factory-Hawarden.jpg",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Revit",
+        path: "/assets/logos/revit.svg",
       },
       {
         id: 2,
