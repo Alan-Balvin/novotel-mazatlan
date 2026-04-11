@@ -50,7 +50,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/assets/projects/radonc.jpg",
     tags: [
       {
         id: 1,
@@ -60,7 +60,7 @@ export const myProjects = [
       {
         id: 2,
         name: "Bluebeam",
-        path: "/assets/logos/bluebeam.svg",
+        path: "/assets/logos/revu.svg",
       },
       {
         id: 3,
@@ -69,45 +69,42 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: ".raf",
-        path: "/assets/logos/family.svg",
+        name: ".rfa",
+        path: "/assets/logos/rfa.svg",
       },
     ],
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "META DATA CENTER OHIO",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "Delivered high-impact contributions across multiple disciplines in Cupertino, earning strong recognition for my work on the design and construction of the Meta data center in Ohio.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Developed and detailed construction and as-built drawings for Autodesk Construction Cloud, supporting multiple facilities (NAB, DCB2, NAH, NLH) within a Meta data center project in Ohio. Contributed across excavation, branch power conduits, and lighting systems, ensuring coordination and accuracy. Utilized DroneDeploy, Autodesk Layout Points, and Evolve to enhance modeling and automation workflows, while managing reviews in Notion and leveraging Cupertino’s proprietary add-in for conduit data synchronization.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/meta.jpg",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Revit",
+        path: "/assets/logos/revit.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "Autodesk Construction Cloud",
+        path: "/assets/logos/acc.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "Evolve",
+        path: "/assets/logos/evolve.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Bluebeam",
+        path: "/assets/logos/revu.svg",
       },
     ],
   },

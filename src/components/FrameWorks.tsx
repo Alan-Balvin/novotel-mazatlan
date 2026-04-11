@@ -5,7 +5,7 @@ interface IconProps {
 }
 
 export function FrameWorks() {
-  const skills = [ "dynamo", "autocad", "revit", "enscape", "navisworks", "evolve"];
+  const skills = [ "dynamo", "autocad", "revit", "enscape", "navisworks", "evolve", "revu", "rfa" ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center overflow-hidden">
       <OrbitingCircles iconSize={40}>
