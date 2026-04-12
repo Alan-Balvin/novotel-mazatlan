@@ -32,7 +32,7 @@ const ProjectDetails = ({title, description, image, href, tags, subDescription, 
         {subDescription.map((subDes, index)=>(
           <p className="mb-3 font-normal text-neutral-400">{subDes}</p>
         ))}
-        <div className="flex items-center justify-between-mt-4">
+        <div className="flex items-center justify-between mt-4">
           <div className="flex gap-3">
             {tags.map((tag)=>(
               <img 

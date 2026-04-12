@@ -1,3 +1,5 @@
+import { path } from "framer-motion/client";
+
 export const myProjects = [
   {
     id: 1,
@@ -106,135 +108,102 @@ export const myProjects = [
         name: "Bluebeam",
         path: "/assets/logos/revu.svg",
       },
+      {
+        id: 5,
+        name: "Drone Deploy",
+        path: "/assets/logos/droneDeploy.svg",
+      },
+      {
+        id: 6,
+        name: "Cupertino",
+        path: "/assets/logos/cupertino.svg",
+      },
+      {
+        id: 7,
+        name: "Layout Points",
+        path: "/assets/logos/layoutPoints.svg",
+      }
     ],
   },
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "Applied Materials Epic Center",
+    
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "I was involved in the installation of conduits and fire protection camera systems at a semiconductor manufacturing facility for Applied Materials located in Sunnyvale, California.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "I worked for the electrical company Paragon on a plant under construction in San Jose, California, a project executed by Hoffman Construction. I was responsible for conduit routing design and the placement of junction boxes, working with worksets in Autodesk Revit. I also coordinated conduit layouts and performed clash detection by exporting viewpoints to Autodesk Navisworks, ensuring proper coordination with structural elements and the correct placement of supports."
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/assets/projects/appliedMaterials.jfif",
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
+        name: "Revit",
+        path: "/assets/logos/revit.svg",
       },
       {
         id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Navisworks",
+        path: "/assets/logos/navisworks.svg",
       },
       {
         id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
+        name: "Autodesk Construction Cloud",
+        path: "/assets/logos/acc.svg",
       },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
+     
     ],
   },
   {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "Novotel Living Mazatlan",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "Developed electrical design solutions for the Novotel Mazatlán hotel in Mazatlán, Mexico.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      "My responsibilities included developing single-line diagrams, preparing load schedules and assisting electrical engineers throughout the design process. I designed conduit installations for HVAC systems, created electrical equipment models using 3D modeling in AutoCAD and families in Autodesk Revit for electrical rooms, and developed mechanical families for HVAC systems. I also worked on conduit routing, lighting systems, lightning protection systems, architectural support models, renderings, and the production of detailed construction drawings.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/assets/projects/novotel.jpg",
+
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
+        name: "Revit",
+        path: "/assets/logos/revit.svg",
       },
       {
         id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        name: "AutoCAD",
+        path: "/assets/logos/autocad.svg",
       },
       {
         id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        name: "Enscape",
+        path: "/assets/logos/enscape.svg",
       },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
+      
     ],
   },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
+ 
 ];
 
 export const mySocials = [
-  {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
-  },
+ {
+  name: "WhatsApp",
+  href: "https://wa.me/5216693298688?text=Hello%20I%20am%20interested%20in%20your%20services",
+  icon: "/assets/socials/whatsApp.svg",
+},
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/eduardocancino2024/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/pabloeduardoarquitecto/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
