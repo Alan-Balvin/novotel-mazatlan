@@ -210,36 +210,32 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "BIM ELECTRICAL MODELER",
+    job: "Hexagón-Multivista, Cordoba, Argentina",
+    date: "2025 - 2026",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Electrical MEP-BIM modeler and detailer for Cupertino Electric US, Inc., contributing to the design and construction of the Meta data center in Ohio. Delivered high-impact contributions across multiple disciplines, including excavation, branch power conduits, and lighting systems, while ensuring coordination and accuracy. Utilized DroneDeploy, Autodesk Layout Points, and Evolve to enhance modeling and automation workflows, while managing reviews in Notion and leveraging Cupertino’s proprietary add-in for conduit data synchronization.",
+      "Proficient in process tracking and workflow optimization using Notion and Evolve for conduit routing systematization, collaborating with multidisciplinary teams through Microsoft Teams, Google Meet, Discord, and Outlook under Project Manager guidelines",
+
+
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "ARCHITECT ELECTRICAL DESIGNER",
+    job: "Gea -EcoConstructora, Mazatlan, Sinaloa, Mexico",
+    date: "2023-2025",
     contents: [
       "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:"
+      ,
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
+    title: "ASSISTANT SITE ARCHITECT",
+    job: "Secretaria de la Defensa Nacional, Mazatlan III R.M.",
+    date: "2022-2023",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Worked assisting the military residents on site, made work generators, estimates, quantifications, work logs, daily book, 2d and 3d drawings, models, site visits and purchase of materials.",
     ],
   },
 ];
