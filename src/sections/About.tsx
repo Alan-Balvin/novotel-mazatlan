@@ -42,10 +42,13 @@ const About = () => {
       </div>
     </div>
     {/* Grid 3 */}
-    <div className="grid-black-color grid-3">
-      <div className="z-10 w-[50%]">
+    <div
+  className="grid-black-color grid-3 cursor-pointer"
+  onClick={() => window.open("https://weather-app-three-zeta-79.vercel.app/", "_blank")}
+>
+      <div className="z-10 w-[40%]">
         <p className="headtext">Time Zone</p>
-        <p className="subtext">I'm based in Mazatlan City/Mountain Zone and open to work remotely</p>
+        <p className="subtext">I'm based in Mazatlan City/Mountain Zone and open to work remotely, click here to check out the weather in Mazatlán with my Weather API</p>
       </div>
       <figure className="absolute left-[30%] top-[10%]">
         <Globe/>
