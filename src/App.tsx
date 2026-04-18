@@ -35,6 +35,7 @@ const App: React.FC = () => {
           { label: 'Home', href: '#home' },
           { label: 'Projects', href: '#projects' },
           { label: 'Plans', href: '#plans' },
+          { label: 'Next.js', href: '#nextjs' },
           { label: 'Renders', href: '#renders' },
           { label: 'Videos', href: '#videos' }
         ]}
@@ -62,7 +63,7 @@ const App: React.FC = () => {
      {activeSection === 'Next.js' && (
   <div style={{ marginTop: '80px', width: '100%', height: '90vh' }}>
     <iframe
-      src="http://localhost:3000/" // ruta de tu Next.js
+      src="https://electrical-next.vercel.app/" // ruta de tu Next.js
       style={{ width: '100%', height: '100%', border: 'none' }}
       title="Next.js Microfrontend"
     />
