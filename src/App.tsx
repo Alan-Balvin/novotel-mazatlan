@@ -30,7 +30,7 @@ const App: React.FC = () => {
   return (
     <div className='container mx-auto max-w-7xl' >
       <Navbar
-        title='Electrical Blueprints'
+        title='MEP Systems'
         links={[
           { label: 'Home', href: '#home' },
           { label: 'Projects', href: '#projects' },

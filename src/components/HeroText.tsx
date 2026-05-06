@@ -1,7 +1,9 @@
 import { FlipWords } from "./FlipWords"
 import { motion } from "motion/react" 
 
-const words= ["BIM", "Electrical", "Systems"];
+const words= ["BIM", "Mechanical", "Plumbing", "Electrical", "Fire Protection", "MEP"
+  
+];
 
 
 
@@ -56,7 +58,7 @@ const HeroText = () => {
           <motion.p className="text-4xl font-black text-neutral-300" variants={variants}
           initial="hidden"
           animate="visible"
-          transition={{delay:1.4}} >Electrical Applications</motion.p>
+          transition={{delay:1.4}} >MEP SYSTEMS</motion.p>
         </div>
       </div>
     </div>

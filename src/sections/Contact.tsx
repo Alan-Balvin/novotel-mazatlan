@@ -68,7 +68,7 @@ const Contact = () => {
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="heading">Let's talk</h2>
           <p className="font-normal text-neutral-400">
-            Whether you are looking to develop a BIM object or an Electrical 3D I'm here to help
+            Whether you are looking to develop a BIM object or an MEP system, I'm here to help
           </p>
         </div>
         <form className="w-full" onSubmit={handleSubmit}>
