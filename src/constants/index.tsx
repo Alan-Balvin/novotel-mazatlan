@@ -1,6 +1,44 @@
 import { path } from "framer-motion/client";
 
 export const myProjects = [
+   {
+    id: 6,
+    title: "Mc-Dowall Justice Center",
+    description:
+      "Worked on HVAC duct installation for a correctional facility, converting generic Revit models into Fabrication Parts and coordinating MEP systems based on project specifications and submittals.",
+    subDescription: [
+"Participated in HVAC ductwork modeling for a correctional facility, converting generic Revit elements into Fabrication Parts using databases configured in MEP AutoCAD to ensure precise dimensions and real-world constructability.",
+  "Modeled and coordinated multiple plumbing systems including sanitary sewer, drainage, vent, and cold water, applying accurate slopes and following project submittals based on client-selected components.",
+  "Collaborated across disciplines by coordinating with structural, architectural, and other engineering models, ensuring clash-free integration within a design-phase project environment.",
+
+
+],
+    href: "",
+    logo: "",
+    image: "/assets/projects/Mc-Dowall.png",
+    tags: [
+      {
+        id: 1,
+        name: "Revit",
+        path: "/assets/logos/revit.svg",
+      },
+      {
+        id: 2,
+        name: "Navisworks",
+        path: "/assets/logos/navisworks.svg",
+      },
+      {
+        id: 3,
+        name: "Autodesk Construction Cloud",
+        path: "/assets/logos/acc.png",
+      },
+      {
+        id: 4,
+        name: "Fabricaion Parts",
+        path: "/assets/logos/fabrication-cadmep.svg",
+      },
+    ],
+  },
   {
     id: 1,
     title: "AIR-BUS UK East Factory",
